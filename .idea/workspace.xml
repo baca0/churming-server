@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="78e0c96e-d25b-42ed-92e8-8bb1f935d080" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/food.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/foodi.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/nation.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/models/shop.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/routes/food.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/routes/nation.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/routes/shop.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.js" afterPath="$PROJECT_DIR$/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/index.js" afterPath="$PROJECT_DIR$/routes/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -699,12 +689,12 @@
       <workItem from="1490173184865" duration="4351000" />
       <workItem from="1491181431262" duration="24000" />
       <workItem from="1491181572887" duration="5473000" />
-      <workItem from="1491575711052" duration="1488000" />
+      <workItem from="1491575711052" duration="1574000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26516000" />
+    <option name="totallyTimeSpent" value="26602000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
