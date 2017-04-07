@@ -20,17 +20,7 @@ db.once('open', function () {
 
 
 // Set the configuration for your app
-var config = {
-    apiKey: "apiKey",
-    authDomain: "projectId.firebaseapp.com",
-    databaseURL: "https://databaseName.firebaseio.com",
-    storageBucket: "bucket.appspot.com"
-};
-firebase.initializeApp(config);
-
-// Get a reference to the database service
-var database = firebase.database();
-//mongoose.connect(config.prop.uri, config.prop.options);
+mongoose.connect(config.prop.uri, config.prop.options);
 
 // DEFINE MODEL
 var Book = require('./models/book');
