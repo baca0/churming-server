@@ -4,7 +4,6 @@ var app = express();
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 var config = require('./config');
-var firebase = require("firebase");
 
 mongoose.Promise = global.Promise;
 
@@ -23,11 +22,12 @@ db.once('open', function () {
 mongoose.connect(config.prop.uri, config.prop.options);
 
 // DEFINE MODEL
-var Book = require('./models/book');
+// var Book = require('./models/book');
 var Food = require('./models/food');
 var Shop = require('./models/shop');
 var Foodi = require('./models/foodi');
 var Nation = require('./models/nation');
+var Category = require('./models/category');
 
 // [CONFIGURE APP TO USE bodyParser]
 app.use(bodyParser.urlencoded({extended: true}));
@@ -49,10 +49,11 @@ var port = process.env.PORT || 8000;
 
 // [CONFIGURE ROUTER]
 //var router = require('./routes/index')(app, Book);
-var routes = require('./routes/index')(app, Book);
+// var routes = require('./routes/index')(app, Book);
 var food = require('./routes/food')(app, Food);
 var nation = require('./routes/nation')(app, Nation);
 var shop = require('./routes/shop')(app, Shop);
+var category = require('./routes/category')(app, Category);
 // var foodi = require('./routes')(app, Foodi);
 
 // [RUN SERVER]

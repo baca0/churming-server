@@ -22,6 +22,20 @@ module.exports = function (app, Food) {
         })
     });
 
+    app.get('/categories/:categoryId/foods', function (req, res) {
+        Food.find({categoryIds: req.params.categoryId}, function (err, food) {
+            if (err) {
+                return res.status(500).json({error: err});
+            }
+
+            if (!food) {
+                return res.status(404).json({error: 'food not found'});
+            }
+
+            res.send(food);
+        })
+    });
+
     // app.post('/foods', function (req, res) {
     //     var food = new Food();
     //     food.name = req.body.name;
