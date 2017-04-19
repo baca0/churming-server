@@ -1,5 +1,5 @@
 exports.prop = {
-    uri: 'mongodb://localhost:27017/foodi',
+    uri: 'mongodb://localhost:27017/soiate',
     option: {
         db: {
             safe: true
@@ -12,5 +12,5 @@ exports.prop = {
             }
         }
     },
-    imgPath: '/Users/baca/images/'
+    imgPath: '/Users/baca/IdeaProjects/foody/images/'
 };

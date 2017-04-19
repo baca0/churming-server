@@ -5,7 +5,7 @@ module.exports = function (app, Category) {
                 return res.status(500).send({error: 'database failure'});
             }
             res.send(categories);
-        })
+        }).sort({order:-1});
     });
 
     app.get('/categories/:categoryId', function (req, res) {
