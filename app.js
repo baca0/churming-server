@@ -58,7 +58,7 @@ var category = require('./routes/category')(app, Category);
 
 // [RUN SERVER]
 var server = app.listen(port, function () {
-    console.log("Express server has started on port " + port)
+    console.log("Express server has started on port " + port);
 });
 
 //module.exports = app;
