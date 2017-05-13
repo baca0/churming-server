@@ -2,4 +2,6 @@ node_modules/*/
 .idea/*
 .idea/workspace.xml
 config/index.js
-images
+images/*
+package.json
+
