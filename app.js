@@ -4,6 +4,7 @@ var app = express();
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 var config = require('./config');
+var cron = require('node-cron');
 
 mongoose.Promise = global.Promise;
 
@@ -49,11 +50,12 @@ var port = process.env.PORT || 8000;
 
 // [CONFIGURE ROUTER]
 //var router = require('./routes/index')(app, Book);
-// var routes = require('./routes/index')(app, Book);
-var food = require('./routes/food')(app, Food);
-var nation = require('./routes/nation')(app, Nation);
-var shop = require('./routes/shop')(app, Shop);
-var category = require('./routes/category')(app, Category);
+require('./routes/food')(app, Food);
+require('./routes/nation')(app, Nation);
+require('./routes/shop')(app, Shop);
+require('./routes/category')(app, Category);
+require('./routes/cron')(app, cron, Category, Food);
+
 // var foodi = require('./routes')(app, Foodi);
 
 // [RUN SERVER]
