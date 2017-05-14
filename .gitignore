@@ -3,5 +3,3 @@ node_modules/*/
 .idea/workspace.xml
 config/index.js
 images/*
-package.json
-
