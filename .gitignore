@@ -1,5 +1,4 @@
-node_modules/*/
-.idea/*
-.idea/workspace.xml
+node_modules/
 config/index.js
-images/*
+images/
+.idea/
